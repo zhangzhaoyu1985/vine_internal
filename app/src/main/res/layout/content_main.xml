@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zhaoyuzhang.winemateinternaltool.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/wine_id_input"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/rectangle_background"
+        android:gravity="center"
+        android:hint="@string/wine_id_hint"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"/>
+
+    <EditText
+        android:id="@+id/roll_number_input"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/wine_id_input"
+        android:layout_alignStart="@+id/wine_id_input"
+        android:layout_below="@+id/wine_id_input"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_background"
+        android:gravity="center"
+        android:hint="@string/roll_number_hint"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"/>
+
+    <EditText
+        android:id="@+id/operator_id_input"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/wine_id_input"
+        android:layout_alignStart="@+id/wine_id_input"
+        android:layout_below="@+id/roll_number_input"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_background"
+        android:gravity="center"
+        android:hint="@string/operator_id_hint"
+        android:inputType="text"
+        android:textSize="12sp"/>
+
+    <EditText
+        android:id="@+id/notification_counter_input"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/wine_id_input"
+        android:layout_alignStart="@+id/wine_id_input"
+        android:layout_below="@+id/operator_id_input"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_background"
+        android:gravity="center"
+        android:hint="@string/notification_counter_hint"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/wine_id_confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/roll_number_confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/wine_id_confirmed"
+        android:layout_alignStart="@+id/wine_id_confirmed"
+        android:layout_below="@+id/wine_id_confirmed"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/operator_id_confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/wine_id_confirmed"
+        android:layout_alignStart="@+id/wine_id_confirmed"
+        android:layout_below="@+id/roll_number_confirmed"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/notification_counter_confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/wine_id_confirmed"
+        android:layout_alignStart="@+id/wine_id_confirmed"
+        android:layout_below="@+id/operator_id_confirmed"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_counter_input"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/done_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_background"
+            android:text="@string/done_button"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/reset_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_background"
+            android:text="@string/reset_button"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/clear_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_background"
+            android:text="@string/clear_button"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/verify_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_background"
+            android:text="@string/verify_button"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/log_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_layout"
+        android:fillViewport="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/event_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>

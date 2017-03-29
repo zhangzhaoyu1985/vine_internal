@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WineMateInternalTool</string>
+    <string name="action_settings">Settings</string>
+    <string name="done_button">Done</string>
+    <string name="reset_button">Reset</string>
+    <string name="wine_id_hint">Enter wine ID:</string>
+    <string name="roll_number_hint">Enter roll number:</string>
+    <string name="operator_id_hint">Enter your name:</string>
+    <string name="notification_counter_hint">Enter a counter:</string>
+    <string name="clear_button">Clear Log</string>
+    <string name="verify_button">Verify</string>
+</resources>
